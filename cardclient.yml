@@ -1,6 +1,7 @@
 configuration:  
-  projectName: cardclient
+  projectName: configclient
 server:
   port: 8000
 message:
-greeting: wszystko ok
+  greeting: Hello from the configuration!
+
