@@ -1,0 +1,6 @@
+configuration:  
+  projectName: cardclient
+server:
+  port: 8000
+message:
+greeting: wszystko ok
