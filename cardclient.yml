@@ -12,3 +12,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8090/eureka/
 
+spring:
+  redis:
+    host: localhost
+    port: 6379
