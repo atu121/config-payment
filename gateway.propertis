@@ -1,0 +1,10 @@
+spring.application.name=gateway
+server.port=8084
+
+eureka.client.region = default
+eureka.client.registryFetchIntervalSeconds = 5
+
+zuul.routes.card-service.path=/card-service/**
+zuul.routes.card-service.sensitive-headers=Set-Cookie,Authorization
+hystrix.command.book-service.execution.isolation.thread.timeoutInMilliseconds=600000
+

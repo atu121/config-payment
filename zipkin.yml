@@ -1,0 +1,11 @@
+configuration:  
+  projectName: zipkin
+
+server:
+  port: 9411
+
+eureka:  
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka/
+
