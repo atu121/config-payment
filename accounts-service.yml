@@ -1,0 +1,10 @@
+configuration:  
+  projectName: accounts-service
+
+server:
+  port: 8102
+
+eureka:  
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka/
