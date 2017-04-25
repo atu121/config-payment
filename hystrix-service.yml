@@ -1,14 +1,10 @@
 configuration:  
-  projectName: cardclient
+  projectName: hystrix-service
 
 server:
-  port: 8000
-
-message:
-  greeting: wszystko ok
+  port: 8091
 
 eureka:  
   client:
     serviceUrl:
       defaultZone: http://localhost:8090/eureka/
-
