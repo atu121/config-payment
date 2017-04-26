@@ -4,11 +4,10 @@ configuration:
 server:
   port: 8000
 
-message:
-  greeting: wszystko ok
-
 eureka:  
   client:
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://localhost:8090/eureka/
 
