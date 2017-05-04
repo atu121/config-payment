@@ -10,4 +10,7 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://localhost:8090/eureka/
-
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
