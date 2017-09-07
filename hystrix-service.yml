@@ -2,12 +2,13 @@ configuration:
   projectName: hystrix-service
 
 server:
-  port: 8091
+  port: 9000
 
 eureka:  
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://discovery-server/eureka/
+      defaultZone: http://discover-server:8090/eureka/
+
 
