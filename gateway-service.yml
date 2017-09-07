@@ -1,0 +1,38 @@
+configuration:  
+  projectName: gateway-service
+
+spring.zipkin:
+  base-url: http://zipkin-server:9411
+
+server:
+  port: 8001
+
+eureka:  
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://discovery-server:8090/eureka/
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    users-service:
+      path: /user/**
+      serviceId: users-service
+    cardclient:
+      path: /card/**
+      serviceId: card-client
+    programs:
+      path: /programs/**
+      serviceId: programs
+
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
